@@ -3,7 +3,6 @@ import {createElement, createHeader} from '../../script/layout'
 
 const page = document.querySelector('.page')
 
-
 const header = createHeader()
 
 page.append(header)
@@ -88,6 +87,3 @@ const createPost = () => {
 
 const post = createPost()
 page.append(post)
-
-const containerTab = createContainerTab()
-page.append(containerTab)

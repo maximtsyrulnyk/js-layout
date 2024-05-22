@@ -43,3 +43,28 @@ export const createHeader = () => {
 
     return header
     }
+    const TAB_BUTTON_LIST = [
+        {
+          active: false,
+          info: 'База знань'
+      
+        },
+        {
+          active: true,
+          info: 'Інформація'
+        },
+      ]
+export const createContainerTab = () => {
+    const div = createElement('div', 'tab__list')
+
+    TAB_BUTTON_LIST.forEach((params) => {
+        const tab = createElement('div', params.active ? 'button tab__button tab__active' : 'button tab__button')
+
+        tab.innerText = params.info
+
+        div.insertAdjectedElement('beforeend', tab)
+    })
+
+    return div
+}
+    
