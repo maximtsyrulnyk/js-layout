@@ -36,9 +36,9 @@ export const createHeader = () => {
             img[key] = value
         })
 
-        button.insertAdjectedElement('beforeend', img)
+        button.insertAdjacentElement('beforeend', img)
 
-        header.insertAdjectedElement('beforeend', button)
+        header.insertAdjacentElement('beforeend', button)
     })
 
     return header
