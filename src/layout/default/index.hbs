@@ -30,6 +30,9 @@
 	{{!-- Підключаємо файл скриптів container --}}
 	<script src="dist/js/container/{{name}}/index.js"></script>
 
+	{{!-- Підключаємо файл стилів container --}}
+	<script src="dist/css/container/{{name}}/index.css" rel="stylesheet"></script>
+
 	{{#each component}}
 	{{!-- Підключаємо файл стилів component --}}
 	<link href='dist/css/component/{{this}}/index.css' rel='stylesheet' />
@@ -46,6 +49,6 @@
 
 </body>
 {{!-- Підключаємо файл скриптів container --}}
-<script src="dist/js/container/index/index.js"></script>
+<script src="dist/js/container/{{name}}/index.js"></script>
 
 </html>
