@@ -1,4 +1,41 @@
-<div class="page">
+{{!
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+}}
 
+<header class="header">
+    <button class="button">
+        <img width="24px" height="24px" src="/img/header__avatar.png">
+    </button>
+</header>
 
+<h1 class="title">Мій блог</h1>
+
+<div class="post button">
+    <div class="post__header">
+        <img src="/img/image 1.png" alt="">
+    </div>
+    <p class="post__info">Що таке база знань?</p>
 </div>
+<div class="post button post--viewed">
+
+    <p class="post__info">База знаний — база данных, содержащая правила вывода и информацию о человеческом опыте и
+        знаниях в некоторой предметной области. В самообучающихся системах база знаний также содержит информацию,
+        являющуюся результатом решения предыдущих задач. </p>
+</div>
+<div class="post button">
+    <div class="post__header">
+
+        <span class="post__date">25.01</span>
+    </div>
+    <p class="post__info">До біса планувальник, наймаємо дизайнера і готуємося до презентації, як Джобс</p>
+</div>
+</main>
+</div>
+
+{{!
+Цей код містить лише те, що буде виводитись в
+
+<body>
+    Адже наш layout/default.hbs має вже структуру HTML
+    }}
